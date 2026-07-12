@@ -19,6 +19,10 @@
 - **拖拽支持**：支持拖拽图像文件直接打开
 - **剪贴板支持**：支持复制图像到剪贴板
 
+![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/001.png)
+![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/002.png)
+![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/003.png)
+
 ## 📷 支持的图像格式
 
 ### 常见格式
