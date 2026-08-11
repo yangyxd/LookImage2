@@ -5,6 +5,7 @@
 #### 欢迎大家使用，有任何建议、问题，可以在此提 Issues！
 
 QQ交流群：793870787
+官方网站：https://yangyxd.github.io/LookImage2/web/
 
 ## ✨ 功能特性
 
