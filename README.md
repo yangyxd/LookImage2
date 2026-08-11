@@ -7,7 +7,7 @@
 QQ交流群：793870787
 官方网站：
 https://yangyxd.github.io/LookImage2/web/
-https://lookimage2.yangyxd.workers.dev/
+https://lookimage2.pages.dev/
 
 ## ✨ 功能特性
 
