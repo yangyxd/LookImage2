@@ -1,6 +1,6 @@
 {
-  "version": "0.1.1",
-  "download_url": "https://gitee.com/yangyxd/look-image-bin/releases/download/v0.1.1/LookImage2.7z",
-  "download_win7_url": "https://gitee.com/yangyxd/look-image-bin/releases/download/v0.1.1/LookImage2_win7.7z",
+  "version": "0.1.2",
+  "download_url": "https://gitee.com/yangyxd/look-image-bin/releases/download/v0.1.2/LookImage2.7z",
+  "download_win7_url": "https://gitee.com/yangyxd/look-image-bin/releases/download/v0.1.2/LookImage2_win7.7z",
   "tool_7za_url": "https://gitee.com/yangyxd/look-image-bin/raw/master/lib/7za.exe"
 }
