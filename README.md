@@ -34,9 +34,9 @@ QQ交流群：[793870787](https://qm.qq.com/q/G4va2pBkwa)
 - **手动更新**：设置页可手动检查更新、前往下载（无自动升级、无自动检查）
 - **体验细节**：资源管理器文件排序、Toast 提示、加载耗时显示、工具栏自动隐藏、长图顶对齐
 
-![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/001.png)
-![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/002.png)
-![](https://gitee.com/yangyxd/look-image-bin/raw/master/imgs/003.png)
+![](imgs/001.png)
+![](imgs/002.png)
+![](imgs/003.png)
 
 ## 📷 支持的图像格式
 
