@@ -117,6 +117,8 @@ QQ交流群：[793870787](https://qm.qq.com/q/G4va2pBkwa)
   不会出现"丢失 d3dcompiler_47.dll"弹窗。
 - 如需启用 GPU 加速与抗锯齿，可将 `d3dcompiler_47.dll`（约 3.5 MB，微软系统组件）放到 exe 同级目录。
 
+[d3dcompiler_47.dll 下载](https://gitee.com/yangyxd/look-image-bin/releases/download/v0.1.1/D3DCompiler_47(Win7_HW_accel_support).7z)
+
 ### 安全提示
 - 不要从不可信来源下载 DLL 文件
 - 建议从官方仓库获取完整发行包
