@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LookImage2 · 极简轻量绿色看图程序</title>
-<meta name="description" content="LookImage2 是一款免费、极简轻量、绿色免安装、原生兼容 Windows 7 的现代看图程序，支持 100+ 图像格式浏览（含 DICOM 医学图像），提供裁剪与常见格式互转。">
+<meta name="description" content="LookImage2 是一款免费、极简轻量、绿色免安装、原生兼容 Windows 7 的现代看图程序，支持 100+ 图像格式（含 RAW、HEIC/AVIF、JXL、EXR、PSD、DDS、SVG、DICOM 医学图像、PDF 多页），提供裁剪、JPEG 真无损旋转、色彩调整、放大 2x/4x、幻灯片放映、文件关联等。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
           一次打开任意图像，纯净又高效。
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#download">下载 v0.1.2</a>
+          <a class="btn btn-primary" href="#download">下载 v0.1.4</a>
           <a class="btn btn-ghost" href="https://github.com/yangyxd/LookImage2" target="_blank" rel="noopener">项目与反馈</a>
         </div>
         <ul class="hero-stats">
@@ -80,27 +80,57 @@
         <article class="card">
           <div class="ico ico-green">🪶</div>
           <h3>轻量高效</h3>
-          <p>原生 Rust 编写，资源占用极低，启动迅速，老旧机器也能流畅运行。</p>
+          <p>原生 Rust 编写，DXGI GPU 硬件加速 + 瓦片化大图，启动迅速、资源占用极低。</p>
         </article>
         <article class="card">
           <div class="ico ico-cyan">🌿</div>
           <h3>绿色免安装</h3>
-          <p>单文件即开即用，不解写注册表、不留残留，U 盘随身带走，重装系统零负担。</p>
+          <p>单文件即开即用，不写注册表、不留残留，U 盘随身带走，重装系统零负担。</p>
         </article>
         <article class="card">
           <div class="ico ico-indigo">🪟</div>
           <h3>兼容 Win7</h3>
-          <p>专为 Windows 7 x64+ 原生打造，同时支持 Win8/10/11，向下兼容无忧。</p>
+          <p>专为 Windows 7 x64+ 原生打造（含兼容 shim），同时支持 Win8/10/11。</p>
         </article>
         <article class="card">
           <div class="ico ico-purple">✂️</div>
           <h3>裁剪与格式转换</h3>
-          <p>内置区域裁剪，并支持 JPEG/PNG/WebP 等常见格式之间的互转另存，满足基础修整需求。</p>
+          <p>区域裁剪（三分线辅助），JPEG/PNG/WebP 等常见格式互转另存，PNG 还支持 256 色等调色板优化导出。</p>
         </article>
         <article class="card">
           <div class="ico ico-orange">🖼️</div>
           <h3>全格式通吃</h3>
-          <p>JPEG/PNG/WebP/AVIF/HEIF/GIF/BMP/TIFF/ICO/SVG 及常见 RAW、DICOM 医学图像，开箱即读；<strong>GIF、APNG、WebP 动画图像</strong>也能流畅播放。</p>
+          <p>JPEG/PNG/WebP/AVIF/HEIF/GIF/BMP/TIFF/ICO/SVG 及常见 RAW、DICOM、<strong>JXL、EXR、QOI、MPO</strong>；GIF/APNG/WebP 动画流畅播放。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-blue">🔄</div>
+          <h3>JPEG 真·无损旋转</h3>
+          <p>基于 libjpeg-turbo 的 MCU 级真·无损旋转，画质零损失，绝不重编码丢像素。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-green">🔍</div>
+          <h3>高质量放大</h3>
+          <p>Lanczos 插值无损放大 2x / 4x，仅内存内视图变更不写盘，超大图有尺寸保护上限。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-cyan">🎨</div>
+          <h3>色彩调整</h3>
+          <p>亮度/对比度/Gamma/饱和度/锐化 5 项实时预览，支持自动优化、按住对比原图。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-indigo">📄</div>
+          <h3>PDF / AI 多页</h3>
+          <p>支持 PDF 与 Adobe Illustrator 多页浏览，底部翻页工具栏 + Ctrl+滚轮快速翻页。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-purple">🎞️</div>
+          <h3>幻灯片放映</h3>
+          <p>可调间隔、随机、循环、全屏淡出过渡与后台预加载，沉浸浏览整本图集。</p>
+        </article>
+        <article class="card">
+          <div class="ico ico-orange">🔗</div>
+          <h3>关联与右键</h3>
+          <p>8 分组文件关联管理、打开方式、打印、桌面/锁屏壁纸、回收站删除、系统属性。</p>
         </article>
       </div>
     </div>
@@ -161,10 +191,22 @@
         <span class="chip">PNM</span>
         <span class="chip">Farbfeld</span>
         <span class="chip">QOI</span>
+        <span class="chip">JXL</span>
+        <span class="chip">EXR</span>
+        <span class="chip">JPEG 2000</span>
+        <span class="chip">HDR</span>
         <span class="chip">常见 RAW</span>
         <span class="chip">PSD</span>
         <span class="chip">DICOM 医学图 (DCM)</span>
-        <span class="chip">更多…</span>
+        <span class="chip">PDF / AI 多页</span>
+        <span class="chip">MPO 3D</span>
+        <span class="chip">JXR</span>
+        <span class="chip">EPS</span>
+        <span class="chip">EMF / WMF</span>
+        <span class="chip">IFF</span>
+        <span class="chip">XPM</span>
+        <span class="chip">SGI</span>
+        <span class="chip">等 100+ 扩展名</span>
       </div>
     </div>
   </section>
