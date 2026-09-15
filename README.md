@@ -4,9 +4,9 @@
 
 #### 欢迎大家使用，有任何建议、问题，可以在此提 Issues！
 
-QQ交流群：793870787
-官方网站：https://yangyxd.github.io/LookImage2/web/ 
-官方网站：https://lookimage2.pages.dev/
+QQ交流群：[793870787](https://qm.qq.com/q/G4va2pBkwa)
+
+官方网站：[Github](https://yangyxd.github.io/LookImage2/web/)、[Cloudflare 镜像](https://lookimage2.pages.dev/)
 
 ## ✨ 功能特性
 
